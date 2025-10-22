@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+locale: "es"
+
+collections:
+  - name: "catalogo"
+    label: "Catálogo"
+    files:
+      - name: "productos"
+        label: "Productos"
+        file: "catalogo/productos.json"
+        fields:
+          - name: "productos"
+            label: "Listado"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID", widget: "number" }
+              - { name: "nombre", label: "Nombre", widget: "string" }
+              - { name: "precio", label: "Precio", widget: "number", value_type: "float" }
+              - { name: "img", label: "Imagen", widget: "image" }
+              - { name: "material", label: "Material", widget: "select", options: ["acero-blanco","acero-dorado","plata-925"] }
+              - { name: "categoria", label: "Categoría", widget: "select", options: ["Cadena","Anillo","Pulsera","Aro","Dije","Otro"] }
