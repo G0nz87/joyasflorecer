@@ -111,6 +111,28 @@
     @keyframes shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
   </style>
 </head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', user => {
+      if (!user) {
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const hasInvite = /invite_token=/.test(window.location.hash);
+      if (hasInvite) {
+        window.netlifyIdentity.open();
+      }
+    });
+  }
+</script>
+</body>
+</html>
+
 <body>
 
 <nav class="navbar navbar-expand-lg">
@@ -136,7 +158,7 @@
         </p>
         <div>
           <a href="#catalogo" class="btn btn-gold me-2">Ver catálogo</a>
-          <a href="https://wa.me/5493834381638?text=Hola,%20me%20gustaría%20más%20información%20sobre%20sus%20joyas" target="_blank" class="btn btn-outline-gold">Comprar por WhatsApp</a>
+          <a href="https://wa.me/5493834381449?text=Hola,%20me%20gustaría%20más%20información%20sobre%20sus%20joyas" target="_blank" class="btn btn-outline-gold">Comprar por WhatsApp</a>
         </div>
       </div>
       <div class="col-lg-6 text-center mt-4 mt-lg-0">
@@ -180,12 +202,12 @@
 
 <footer>
   <p><b>Joyas Florecer</b> · Plata 925 · Envíos a todo el país</p>
-  <p>WhatsApp: <a class="whatsapp-link" href="https://wa.me/5493834381638" target="_blank">+54 9 383 4381638</a></p>
+  <p>WhatsApp: <a class="whatsapp-link" href="https://wa.me/5493834381449" target="_blank">+54 9 383 4381449</a></p>
   <p>Instagram: <a class="instagram-link" href="https://instagram.com/joyasflorecer" target="_blank">@joyasflorecer</a></p>
   <p>© 2025 Joyas Florecer — Hecho con amor</p>
 </footer>
 
-<a href="https://wa.me/5493834381638?text=Hola,%20quiero%20más%20info%20sobre%20Joyas%20Florecer" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/5493834381449?text=Hola,%20quiero%20más%20info%20sobre%20Joyas%20Florecer" class="whatsapp-float" target="_blank">
   <img src="images/whatsapp_gold.png" alt="WhatsApp Joyas Florecer">
 </a>
 
@@ -634,7 +656,7 @@
       total += it.price * it.qty;
     });
     text += `\nTotal estimado: $${total.toLocaleString('es-AR')}\n\n¿Me confirmas disponibilidad y formas de pago?`;
-    const phone = '5493834381638';
+    const phone = '5493834381449';
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   });
