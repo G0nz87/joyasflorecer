@@ -2,25 +2,40 @@ backend:
   name: git-gateway
   branch: main
 
+locale: "es"
+publish_mode: editorial_workflow
+
 media_folder: "images"
 public_folder: "/images"
-locale: "es"
 
 collections:
   - name: "catalogo"
     label: "Catálogo"
+    description: "Solo catálogo: precios e imágenes. No modifica logo ni portada."
     files:
-      - name: "productos"
+      - file: "catalogo/productos.json"
+        name: "productos"
         label: "Productos"
-        file: "catalogo/productos.json"
+        format: "json"
         fields:
-          - name: "productos"
-            label: "Listado"
+          - label: "Productos"
+            name: "productos"
             widget: "list"
+            summary: "{{fields.nombre}} — ${{fields.precio}} — {{fields.material}}"
             fields:
-              - { name: "id", label: "ID", widget: "number" }
-              - { name: "nombre", label: "Nombre", widget: "string" }
-              - { name: "precio", label: "Precio", widget: "number", value_type: "float" }
-              - { name: "img", label: "Imagen", widget: "image" }
-              - { name: "material", label: "Material", widget: "select", options: ["acero-blanco","acero-dorado","plata-925"] }
-              - { name: "categoria", label: "Categoría", widget: "select", options: ["Cadena","Anillo","Pulsera","Aro","Dije","Otro"] }
+              - { label: "ID", name: "id", widget: "number", value_type: "int", min: 1 }
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Precio", name: "precio", widget: "number", min: 0, step: 1 }
+              - label: "Material"
+                name: "material"
+                widget: "select"
+                options:
+                  - { label: "Plata 925", value: "plata-925" }
+                  - { label: "Acero blanco", value: "acero-blanco" }
+              - label: "Imagen"
+                name: "img"
+                widget: "image"
+                choose_url: false
+                hint: "Usá ‘images-plata/’ para plata y ‘images-acero/’ para acero."
+        editor:
+          preview: false
