@@ -5,8 +5,8 @@ backend:
 locale: "es"
 publish_mode: editorial_workflow
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "images"      # Carpeta física donde se guardan imágenes
+public_folder: "/images"    # Cómo se referencian en la web
 
 collections:
   - name: "catalogo"
@@ -18,24 +18,20 @@ collections:
         label: "Productos"
         format: "json"
         fields:
-          - label: "Productos"
-            name: "productos"
-            widget: "list"
-            summary: "{{fields.nombre}} — ${{fields.precio}} — {{fields.material}}"
-            fields:
-              - { label: "ID", name: "id", widget: "number", value_type: "int", min: 1 }
-              - { label: "Nombre", name: "nombre", widget: "string" }
-              - { label: "Precio", name: "precio", widget: "number", min: 0, step: 1 }
-              - label: "Material"
-                name: "material"
-                widget: "select"
-                options:
-                  - { label: "Plata 925", value: "plata-925" }
-                  - { label: "Acero blanco", value: "acero-blanco" }
-              - label: "Imagen"
-                name: "img"
-                widget: "image"
-                choose_url: false
-                hint: "Usá ‘images-plata/’ para plata y ‘images-acero/’ para acero."
-        editor:
-          preview: false
+          - { label: "ID", name: "id", widget: "number", value_type: "int", min: 1 }
+          - { label: "Nombre", name: "nombre", widget: "string" }
+          - { label: "Precio", name: "precio", widget: "number", min: 0, step: 1 }
+          - label: "Material"
+            name: "material"
+            widget: "select"
+            options:
+              - { label: "Plata 925", value: "plata-925" }
+              - { label: "Acero blanco", value: "acero-blanco" }
+          - label: "Imagen"
+            name: "img"
+            widget: "image"
+            choose_url: false
+            hint: "Usá ‘images-plata/’ para plata y ‘images-acero/’ para acero."
+
+editor:
+  preview: false
