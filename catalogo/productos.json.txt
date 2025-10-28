@@ -1,5 +1,0 @@
-{
-  "productos": [
-    { "id": 1, "nombre": "Cadena Acero Cola de Ratón", "precio": 5000, "img": "images-acero/producto1.jpg", "material": "acero-blanco", "categoria": "Cadena" }
-  ]
-}

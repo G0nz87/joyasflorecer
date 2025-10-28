@@ -1,0 +1,35 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+locale: "es"
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "catalogo"
+    label: "Catálogo"
+    description: "Solo catálogo: precios e imágenes. No modifica logo ni portada."
+    files:
+      - file: "catalogo/productos.json"
+        name: "productos"
+        label: "Productos"
+        format: "json"
+        fields:
+          - { label: "ID", name: "id", widget: "number", value_type: "int", min: 1 }
+          - { label: "Nombre", name: "nombre", widget: "string" }
+          - { label: "Precio", name: "precio", widget: "number", min: 0, step: 1 }
+          - label: "Material"
+            name: "material"
+            widget: "select"
+            options:
+              - { label: "Plata 925", value: "plata-925" }
+              - { label: "Acero blanco", value: "acero-blanco" }
+          - label: "Imagen"
+            name: "img"
+            widget: "image"
+            choose_url: false
+            hint: "Usá ‘images-plata/’ para plata y ‘images-acero/’ para acero."
