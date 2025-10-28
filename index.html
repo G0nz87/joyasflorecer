@@ -8,8 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --gold-1:#d4af37;
-      --gold-2:#c39c2f; [cite: 2]
+      --gold-1:#d4af37; /* [cite: 1] */
+      --gold-2:#c39c2f; /* [cite: 2] */
       --gold-3:#b78a25;
       --text:#222;
       --muted:#6b7280;
@@ -29,7 +29,7 @@
     /* Botones base */
     .btn-gold{
       background:linear-gradient(135deg,var(--gold-2),var(--gold-1));
-      color:#fff;font-weight:bold;border:none;border-radius:50px; [cite: 3]
+      color:#fff;font-weight:bold;border:none;border-radius:50px; /* [cite: 3] */
       padding:12px 24px;transition:transform .2s ease, box-shadow .2s ease;
       box-shadow:0 4px 10px rgba(197,160,89,.35)
     }
@@ -47,7 +47,7 @@
     .filters{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:0 0 24px}
     .filter-pill{
       border:2px solid var(--gold-2);
-      color:var(--gold-2); [cite: 4]
+      color:var(--gold-2); /* [cite: 4] */
       background:#fff; border-radius:999px; padding:10px 20px;
       font-weight:700; cursor:pointer; transition:.2s;
     }
@@ -64,9 +64,9 @@
     /* Corazón contador */
     .heart-badge{
       position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;
-      background:radial-gradient(circle at 30% 30%,#ffe4a6 0 20%,#f3c754 25%,#e0b33f 60%,#b98b22 100%); [cite: 5]
+      background:radial-gradient(circle at 30% 30%,#ffe4a6 0 20%,#f3c754 25%,#e0b33f 60%,#b98b22 100%); /* [cite: 5] */
       box-shadow:inset 0 2px 3px rgba(255,255,255,.35), inset 0 -2px 5px rgba(0,0,0,.2), 0 4px 12px rgba(0,0,0,.15);
-      display:none;align-items:center;justify-content:center;z-index:3 [cite: 6]
+      display:none;align-items:center;justify-content:center;z-index:3 /* [cite: 6] */
     }
     .heart-badge.show{display:flex}
     .heart-badge .count{font-weight:800;font-size:1rem;line-height:1;color:#1a1306;text-shadow:0 1px 0 rgba(255,255,255,.5),0 0 8px rgba(255,255,255,.25)}
@@ -75,10 +75,10 @@
     .qty-ui{display:flex;align-items:center;justify-content:center;gap:18px}
     .qty-ui .qty-icon{
       width:34px;height:34px;border-radius:50%;
-      background:linear-gradient(145deg,#f6d77a,#e3b949); [cite: 7]
+      background:linear-gradient(145deg,#f6d77a,#e3b949); /* [cite: 7] */
       color:#4a3717;font-weight:900;font-size:1.1rem;display:flex;align-items:center;justify-content:center;
       box-shadow:0 4px 8px rgba(0,0,0,.18), inset 0 2px 3px rgba(255,255,255,.6), inset 0 -2px 3px rgba(0,0,0,.18);
-      user-select:none;cursor:pointer;transform:translateZ(0) [cite: 8]
+      user-select:none;cursor:pointer;transform:translateZ(0) /* [cite: 8] */
     }
     .qty-ui .qty-icon:active{transform:translateY(1px)}
     .qty-ui .qty-number{min-width:28px;text-align:center;font-weight:800;letter-spacing:.5px}
@@ -94,12 +94,12 @@
     footer::before{content:"";position:absolute;inset:0;background:#0d0f10;z-index:-2}
     footer::after{
       content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
-      background: [cite: 9]
-        radial-gradient( 60% 80% at 20% 30%, rgba(255,255,255,.045) 0%, transparent 60% ),
-        radial-gradient( 70% 90% at 80% 10%, rgba(255,255,255,.035) 0%, transparent 65% ),
-        radial-gradient( 50% 70% at 60% 80%, rgba(255,255,255,.035) 0%, transparent 60% ),
-        repeating-linear-gradient(65deg, rgba(255,255,255,.04) 0 2px, transparent 2px 7px);
-      mix-blend-mode:screen;filter:contrast(110%) blur(.3px) opacity(.85) [cite: 10]
+      background: /* [cite: 9] */
+        radial-gradient( 60% 80% at 20% 30%, rgba(255,255,255,.045) 0%, transparent 60% ), /* [cite: 9] */
+        radial-gradient( 70% 90% at 80% 10%, rgba(255,255,255,.035) 0%, transparent 65% ), /* [cite: 9] */
+        radial-gradient( 50% 70% at 60% 80%, rgba(255,255,255,.035) 0%, transparent 60% ), /* [cite: 9] */
+        repeating-linear-gradient(65deg, rgba(255,255,255,.04) 0 2px, transparent 2px 7px); /* [cite: 9] */
+      mix-blend-mode:screen;filter:contrast(110%) blur(.3px) opacity(.85) /* [cite: 10] */
     }
     .whatsapp-link,.instagram-link{color:var(--gold-2);font-weight:700}
 
@@ -132,12 +132,11 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 text-center text-lg-start">
-       
-         <h1 class="fw-bold mb-3">Joyas que florecen contigo</h1> [cite: 14]
+         <h1 class="fw-bold mb-3">Joyas que florecen contigo</h1> {/* [cite: 14] */}
         <p class="text-muted mb-4">
           Descubrí nuestra colección de <b>plata 925</b>, <b>acero blanco</b> y <b>acero dorado</b>.
-          Diseños únicos, packaging premium y envíos a todo el país. [cite: 15]
-        </p> [cite: 16]
+          Diseños únicos, packaging premium y envíos a todo el país. {/* [cite: 15] */}
+        </p> {/*  */}
         <div>
           <a href="#catalogo" class="btn btn-gold me-2">Ver catálogo</a>
           <a href="https://wa.me/5493834381449?text=Hola,%20me%20gustaría%20más%20información%20sobre%20sus%20joyas" target="_blank" class="btn btn-outline-gold">Comprar por WhatsApp</a>
@@ -153,7 +152,7 @@
 <section id="catalogo" class="container py-5">
   <h2 class="text-center fw-bold mb-4">Catálogo por colecciones</h2>
 
-  <div class="filters mb-4" id="main-filters"> [cite: 17]
+  <div class="filters mb-4" id="main-filters"> {/*  */}
     <button class="filter-pill active" data-main="todos">Todos</button>
     <button class="filter-pill" data-main="plata">Plata 925</button>
     <button class="filter-pill" data-main="acero-blanco">Acero Blanco y Dorado</button>
@@ -176,7 +175,7 @@
   <h2 class="text-center fw-bold mb-4">🛒 Tu carrito</h2>
   <div id="cart-items"></div>
   <div class="cart-total" id="cart-total"></div>
-  <div class="text-center mt-4"> [cite: 18]
+  <div class="text-center mt-4"> {/* [cite: 18] */}
     <button class="btn btn-outline-gold" onclick="showCatalog()">⬅ Seguir comprando</button>
     <button id="checkout-btn" class="btn btn-gold">Finalizar pedido por WhatsApp</button>
   </div>
@@ -196,75 +195,74 @@
 <script>
   /* --------------------------- Estado --------------------------- */
   let cart = [];
-  let filtroPrincipalActual = 'todos'; [cite: 19]
+  let filtroPrincipalActual = 'todos'; /* [cite: 19] */
   let filtroSecundarioActual = 'todos';
 
   const productListEl = document.getElementById('product-list');
   const cartCountEl   = document.getElementById('cart-count');
-  const cartItemsEl   = document.getElementById('cart-items'); [cite: 20]
+  const cartItemsEl   = document.getElementById('cart-items'); /* [cite: 20] */
   const cartTotalEl   = document.getElementById('cart-total');
   const subFiltersEl  = document.getElementById('sub-filters');
-  /* ====== LISTA CENTRALIZADA DE PRODUCTOS (CON IDs ÚNICOS) ====== */ [cite: 21]
+  /* ====== LISTA CENTRALIZADA DE PRODUCTOS (CON IDs ÚNICOS) ====== */ /* [cite: 21] */
   const productos = [
     // --- Productos de Plata 925 ---
     {id:'plata-1',  nombre:"Aros Argolla Plata Labrados Hojas",    precio:0, img:"images-plata/Aros Argolla Plata Labrados Hojas.jpg", material:"plata", categoria:"aros"},
     {id:'plata-2',  nombre:"Aros Argolla Plata Diseño Filigrana",    precio:0, img:"images-plata/producto2.jpg", material:"plata", categoria:"aros"},
     {id:'plata-3',  nombre:"Aros Huggie Plata Tres Corazones",    precio:0, img:"images-plata/producto3.jpg", material:"plata", categoria:"aros"},
     {id:'plata-4',  nombre:"Aros Huggie Plata Corazón Calado",    precio:0, img:"images-plata/producto4.jpg", material:"plata", categoria:"aros"},
-    {id:'plata-5',  nombre:"Aros Colgantes Plata Círculo Perla",    precio:0, img:"images-plata/producto5.jpg", material:"plata", categoria:"aros"}, [cite: 22]
+    {id:'plata-5',  nombre:"Aros Colgantes Plata Círculo Perla",    precio:0, img:"images-plata/producto5.jpg", material:"plata", categoria:"aros"}, /* [cite: 22] */
     {id:'plata-6',  nombre:"Aros Huggie Plata Microcircon Corazón",    precio:0, img:"images-plata/producto6.jpg", material:"plata", categoria:"aros"},
     {id:'plata-7',  nombre:"Aros Argolla Plata Inflada Textura Granulada",    precio:0, img:"images-plata/producto7.jpg", material:"plata", categoria:"aros"},
     {id:'plata-8',  nombre:"Aros Huggie Plata Calado Flores",    precio:0, img:"images-plata/producto8.jpg", material:"plata", categoria:"aros"},
     {id:'plata-9',  nombre:"Aros Huggie Plata Fila Circones",    precio:0, img:"images-plata/producto9.jpg", material:"plata", categoria:"aros"},
-    {id:'plata-10',  nombre:"Aros Huggie Plata Fila Corazones",    precio:0, img:"images-plata/producto10.jpg", material:"plata", 
- categoria:"aros"}, [cite: 23]
+    {id:'plata-10',  nombre:"Aros Huggie Plata Fila Corazones",    precio:0, img:"images-plata/producto10.jpg", material:"plata", categoria:"aros"}, /* [cite: 23] */
     {id:'plata-11',  nombre:"Aros Huggie Plata Diseño Puntas Bambú",    precio:0, img:"images-plata/producto11.jpg", material:"plata", categoria:"aros"},
     {id:'plata-12',  nombre:"Aros Argolla Plata Geométricos Lisos",    precio:0, img:"images-plata/producto12.jpg", material:"plata", categoria:"aros"},
     {id:'plata-13',  nombre:"Aros Argolla Plata Entorchado Pequeño",    precio:0, img:"images-plata/producto13.jpg", material:"plata", categoria:"aros"},
     {id:'plata-14',  nombre:"Aros Argolla Plata Entorchado Grande",    precio:0, img:"images-plata/producto14.jpg", material:"plata", categoria:"aros"},
     {id:'plata-15',  nombre:"Aros Huggie Plata Calado Flores Continuas",    precio:0, img:"images-plata/producto15.jpg", material:"plata", categoria:"aros"},
     {id:'plata-16',  nombre:"Aros Huggie Plata Labrado Girasoles",   
-     precio:0, img:"images-plata/producto16.jpg", material:"plata", categoria:"aros"}, [cite: 24]
+     precio:0, img:"images-plata/producto16.jpg", material:"plata", categoria:"aros"}, /* [cite: 24] */
     {id:'plata-17',  nombre:"Aros Huggie Plata Fila Flores Texturizadas",    precio:0, img:"images-plata/producto17.jpg", material:"plata", categoria:"aros"},
     {id:'plata-18',  nombre:"Aros Argolla Plata Entorchado Mediano",    precio:0, img:"images-plata/producto18.jpg", material:"plata", categoria:"aros"},
     {id:'plata-19',  nombre:"Aros Argolla Plata Forma U Textura Granulada",    precio:0, img:"images-plata/producto19.jpg", material:"plata", categoria:"aros"},
     {id:'plata-20',  nombre:"Aros Argolla Plata Filigrana Borde Pétalos",    precio:0, img:"images-plata/producto20.jpg", material:"plata", categoria:"aros"},
     {id:'plata-21',  nombre:"Aros Huggie Plata Rama Laurel",    precio:0, img:"images-plata/producto21.jpg", material:"plata", categoria:"aros"},
     {id:'plata-22',  nombre:"Aros 
- Argolla Plata Abovedada Textura Frosty",    precio:0, img:"images-plata/producto22.jpg", material:"plata", categoria:"aros"}, [cite: 25]
+ Argolla Plata Abovedada Textura Frosty",    precio:0, img:"images-plata/producto22.jpg", material:"plata", categoria:"aros"}, /* [cite: 25] */
     {id:'plata-23',  nombre:"Aros Argolla Plata Entrelazado Liso Textura",    precio:0, img:"images-plata/producto23.jpg", material:"plata", categoria:"aros"},
     {id:'plata-24',  nombre:"Aros Argolla Plata Forma U Tres Filas Granuladas",    precio:0, img:"images-plata/producto24.jpg", material:"plata", categoria:"aros"},
     {id:'plata-25',  nombre:"Aros Argolla Plata Ovalados Líneas Diagonales",    precio:0, img:"images-plata/producto25.jpg", material:"plata", categoria:"aros"},
     {id:'plata-26',  nombre:"Aros Plata Cierre Bisagra Filigrana Flor",    precio:0, img:"images-plata/producto26.jpg", material:"plata", categoria:"aros"},
     {id:'plata-27',  nombre:"Aros Argolla Plata Calado Múltiples Corazones",    
- precio:0, img:"images-plata/producto27.jpg", material:"plata", categoria:"aros"}, [cite: 26]
+ precio:0, img:"images-plata/producto27.jpg", material:"plata", categoria:"aros"}, /* [cite: 26] */
     {id:'plata-28',  nombre:"Aros Huggie Plata Estrella Calada",    precio:0, img:"images-plata/producto28.jpg", material:"plata", categoria:"aros"},
     {id:'plata-29',  nombre:"Aros Argolla Plata Textura Rombos",    precio:0, img:"images-plata/producto29.jpg", material:"plata", categoria:"aros"},
     {id:'plata-30',  nombre:"Aros Huggie Plata Labrado Mariposas",    precio:0, img:"images-plata/producto30.jpg", material:"plata", categoria:"aros"},
     {id:'plata-31',  nombre:"Anillo Plata Piedra Azul Princesa Circones Trillón",    precio:0, img:"images-plata/producto31.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-32',  nombre:"Anillo Plata Colibrí Piedra Azul Circones",    precio:0, img:"images-plata/producto32.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-33',  nombre:"Anillo Plata Banda 
- Texturizada Flor Azul",    precio:0, img:"images-plata/producto33.jpg", material:"plata", categoria:"anillos"}, [cite: 27]
+ Texturizada Flor Azul",    precio:0, img:"images-plata/producto33.jpg", material:"plata", categoria:"anillos"}, /* [cite: 27] */
     {id:'plata-34',  nombre:"Anillo Plata Piedra Cuadrada Azul Banda Esferas",    precio:0, img:"images-plata/producto34.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-35',  nombre:"Anillo Plata Roseta Piedra Oval Azul Halo Circones",    precio:0, img:"images-plata/producto35.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-36',  nombre:"Anillo Plata Solitario Compromiso Circon Redondo",    precio:0, img:"images-plata/producto36.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-37',  nombre:"Anillo Plata Oro Alas Ángel Corazón",    precio:0, img:"images-plata/producto37.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-38',  nombre:"Anillo Plata Banda Texturizada Cruz Circones",    precio:0, 
- img:"images-plata/producto38.jpg", material:"plata", categoria:"anillos"}, [cite: 28]
+ img:"images-plata/producto38.jpg", material:"plata", categoria:"anillos"}, /* [cite: 28] */
     {id:'plata-39',  nombre:"Anillo Plata Oro Árbol de la Vida Marco Octogonal",    precio:0, img:"images-plata/producto39.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-40',  nombre:"Anillo Plata Oro Cruz Ancha Lisa",    precio:0, img:"images-plata/producto40.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-41',  nombre:"Anillo Plata Cruz Lisa Estilizada",    precio:0, img:"images-plata/producto41.jpg", material:"plata", categoria:"anillos"},
     {id:'plata-42',  nombre:"Collar Rosario Plata Medalla Milagrosa",    precio:0, img:"images-plata/producto42.jpg", material:"plata", categoria:"conjuntos"},
     {id:'plata-43',  nombre:"Dije Plata Cruz Corazón Calado",    precio:0, img:"images-plata/producto43.jpg", material:"plata", categoria:"conjuntos"},
     {id:'plata-44',  nombre:"Conjunto Plata 
- Cadena Singapur Dije Piedra Rosa",    precio:0, img:"images-plata/producto44.jpg", material:"plata", categoria:"conjuntos"}, [cite: 29]
+ Cadena Singapur Dije Piedra Rosa",    precio:0, img:"images-plata/producto44.jpg", material:"plata", categoria:"conjuntos"}, /* [cite: 29] */
     {id:'plata-45',  nombre:"Conjunto Plata Cadena Veneciana Esfera Facetada",    precio:0, img:"images-plata/producto45.jpg", material:"plata", categoria:"conjuntos"},
     {id:'plata-46',  nombre:"Dije Plata Medalla San Benito Redondo",    precio:0, img:"images-plata/producto46.jpg", material:"plata", categoria:"conjuntos"},
     {id:'plata-47',  nombre:"Conjunto Plata Cadena Singapur Esfera Lisa",    precio:0, img:"images-plata/producto47.jpg", material:"plata", categoria:"conjuntos"},
     {id:'plata-48',  nombre:"Dije Plata Figura Perro Salchicha 3D",    precio:0, img:"images-plata/Dije Plata Figura Perro Salchicha 3D.jpg", material:"plata", categoria:"conjuntos"},
     
     // --- Productos de 
- Acero --- [cite: 30]
+ Acero --- /* [cite: 30] */
     {id:'acero-1', nombre:"Cadena Acero Cola De Raton Cierre Barril", precio:0, img:"images-acero/producto1.jpg", material:"acero-blanco", categoria:"Cadenas"},
     {id:'acero-2', nombre:"Anillo Acero Cintillo Corazones Circones Rosados", precio:0, img:"images-acero/producto2.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-3', nombre:"Anillo Acero Cintillo Tréboles Multicolores", precio:0, img:"images-acero/producto3.jpg", material:"acero-blanco", categoria:"Anillos"},
@@ -272,14 +270,14 @@
     {id:'acero-5', nombre:"Collar Acero Dije Cerezas Esmaltadas", precio:0, img:"images-acero/producto5.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-6', nombre:"Pulsera Acero Hebras Trenzadas Malla Plana", precio:0, img:"images-acero/producto6.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-7', nombre:"Pulsera Acero Dije Girasol Circones", precio:0, img:"images-acero/producto7.jpg", material:"acero-blanco", categoria:"Pulseras"},
-    {id:'acero-8', nombre:"Collar Acero Dije Mariposa Piedras Violetas", precio:0, img:"images-acero/producto8.jpg", material:"acero-blanco", categoria:"Collares y Dijes"}, [cite: 31]
+    {id:'acero-8', nombre:"Collar Acero Dije Mariposa Piedras Violetas", precio:0, img:"images-acero/producto8.jpg", material:"acero-blanco", categoria:"Collares y Dijes"}, /* [cite: 31] */
     {id:'acero-9', nombre:"Collar Acero Dije Flor De Nácar Circón", precio:0, img:"images-acero/producto9.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-10', nombre:"Pulsera Acero Charms Cierre Trébol", precio:0, img:"images-acero/producto10.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-11', nombre:"Pulsera Acero Cadena Fina Con Esferas", precio:0, img:"images-acero/producto11.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-12', nombre:"Collar Cristales Facetados Azules Y Verdes", precio:0, img:"images-acero/producto12.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-13', nombre:"Aros Acero Dije Trébol Rojo Brillante", precio:0, img:"images-acero/producto13.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-14', nombre:"Collar Acero Dije Mariposa Asimétrico Nácar", precio:0, 
- img:"images-acero/producto14.jpg", material:"acero-blanco", categoria:"Collares y Dijes"}, [cite: 32]
+ img:"images-acero/producto14.jpg", material:"acero-blanco", categoria:"Collares y Dijes"}, /* [cite: 32] */
     {id:'acero-15', nombre:"Pulsera Acero Eslabones Cruz De Malta", precio:0, img:"images-acero/producto15.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-16', nombre:"Aros Acero Dije Flor Cristales Rosados", precio:0, img:"images-acero/producto16.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-17', nombre:"Collar Acero Dije Mariposa Calada Circones", precio:0, img:"images-acero/producto17.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
@@ -287,14 +285,14 @@
     {id:'acero-19', nombre:"Anillo Acero Abierto Forma V Circones Multicolor", precio:0, img:"images-acero/producto19.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-20', nombre:"Pulsera Acero Eslabones Corazón Piedra Roja", precio:0, img:"images-acero/producto20.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-21', nombre:"Pulsera Esclava Acero Broche Redondo 
- Doble Aureola", precio:0, img:"images-acero/producto21.jpg", material:"acero-blanco", categoria:"Pulseras"}, [cite: 33]
+ Doble Aureola", precio:0, img:"images-acero/producto21.jpg", material:"acero-blanco", categoria:"Pulseras"}, /* [cite: 33] */
     {id:'acero-22', nombre:"Collar Acero Dije Trébol Móvil Circones Multicolor", precio:0, img:"images-acero/producto22.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-23', nombre:"Collar Acero Dije Mariposa Cristales Celestes", precio:0, img:"images-acero/producto23.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-24', nombre:"Collar Acero Dije Cerezas Hojas Circones", precio:0, img:"images-acero/producto24.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-25', nombre:"Pulsera Acero Cadena Fina Dijes Concha Marina", precio:0, img:"images-acero/producto25.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-26', nombre:"Aros Acero Dije Trébol Fucsia Metalizado", precio:0, img:"images-acero/producto26.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-27', nombre:"Collar Acero Dije Trébol Piedra Roja Central", precio:0, img:"images-acero/producto27.jpg", material:"acero-blanco", categoria:"Collares y 
- Dijes"}, [cite: 34]
+ Dijes"}, /* [cite: 34] */
     {id:'acero-28', nombre:"Anillo Acero Abierto Ajustable Diseño Colibrí", precio:0, img:"images-acero/producto28.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-29', nombre:"Anillo Acero Mariposa Asimétrica Multicolor", precio:0, img:"images-acero/producto29.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-30', nombre:"Pulsera Acero Cadena Bolitas Y Barriles", precio:0, img:"images-acero/producto30.jpg", material:"acero-blanco", categoria:"Pulseras"},
@@ -302,35 +300,34 @@
     {id:'acero-32', nombre:"Aros Acero Dije Flor Cristales Blancos", precio:0, img:"images-acero/producto32.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-33', nombre:"Anillo Acero Abierto Ajustable Tréboles Negros", precio:0, img:"images-acero/producto33.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-34', nombre:"Anillo Acero Cintillo Corazones Circones Negros", precio:0, img:"images-acero/producto34.jpg", material:"acero-blanco", categoria:"Anillos"},
-    {id:'acero-35', nombre:"Anillo Acero Cintillo Corazones Verdes Y Morados", precio:0, img:"images-acero/producto35.jpg", material:"acero-blanco", categoria:"Anillos"}, [cite: 35]
+    {id:'acero-35', nombre:"Anillo Acero Cintillo Corazones Verdes Y Morados", precio:0, img:"images-acero/producto35.jpg", material:"acero-blanco", categoria:"Anillos"}, /* [cite: 35] */
     {id:'acero-36', nombre:"Aros Acero Anchos Circones Multicolor Baguette", precio:0, img:"images-acero/producto36.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-37', nombre:"Anillo Acero Mariposa Circones De Colores", precio:0, img:"images-acero/producto37.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-38', nombre:"Anillo Acero Banda Fina Trébol Esmalte Rojo", precio:0, img:"images-acero/producto38.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-39', nombre:"Anillo Acero Sinfín Corazones Cristal Multicolor", precio:0, img:"images-acero/producto39.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-40', nombre:"Anillo Acero Mariposa Cristal Rojo Facetado", precio:0, img:"images-acero/producto40.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-41', nombre:"Anillo Acero Abierto Mariposa Circones Rosados", precio:0, img:"images-acero/producto41.jpg", material:"acero-blanco", categoria:"Anillos"},
-    {id:'acero-42', nombre:"Anillo Acero Delicado Solitario Piedra Negra", precio:0, img:"images-acero/producto42.jpg", material:"acero-blanco", categoria:"Anillos"}, [cite: 36]
+    {id:'acero-42', nombre:"Anillo Acero Delicado Solitario Piedra Negra", precio:0, img:"images-acero/producto42.jpg", material:"acero-blanco", categoria:"Anillos"}, /* [cite: 36] */
     {id:'acero-43', nombre:"Anillo Acero Banda Esmaltada Blanca Piedra Verde", precio:0, img:"images-acero/producto43.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-44', nombre:"Anillo Acero Abierto Mariposa Esmalte Rojo", precio:0, img:"images-acero/producto44.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-45', nombre:"Anillo Acero Abierto Mariposa Circones Blancos", precio:0, img:"images-acero/producto45.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-46', nombre:"Anillo Acero Tres Flores Giratorias Circones", precio:0, img:"images-acero/producto46.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-47', nombre:"Anillo Acero Esfera Central Circones Multicolor", precio:0, img:"images-acero/producto47.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-48', nombre:"Anillo Acero Esfera Central Circones Blancos", precio:0, img:"images-acero/producto48.jpg", material:"acero-blanco", categoria:"Anillos"},
-    {id:'acero-49', nombre:"Anillo Acero Mariposa Circones Rosados Baguette", precio:0, img:"images-acero/producto49.jpg", material:"acero-blanco", categoria:"Anillos"}, [cite: 37]
+    {id:'acero-49', nombre:"Anillo Acero Mariposa Circones Rosados Baguette", precio:0, img:"images-acero/producto49.jpg", material:"acero-blanco", categoria:"Anillos"}, /* [cite: 37] */
     {id:'acero-50', nombre:"Anillo Acero Corazón Estilo Pixelado Circones", precio:0, img:"images-acero/producto50.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-51', nombre:"Anillo Acero Cóctel Domo Circones Baguette", precio:0, img:"images-acero/producto51.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-52', nombre:"Aros Acero Vintage Aldaba Cuerpo Inflado", precio:0, img:"images-acero/producto52.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-53', nombre:"Anillo Acero Abierto Ajustable Esfera Y Solitario", precio:0, img:"images-acero/producto53.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-54', nombre:"Anillo Acero Solitario Compromiso Piedra Pera", precio:0, img:"images-acero/producto54.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-55', nombre:"Aros Acero Argolla Rectangular Textura Acanalada", precio:0, img:"images-acero/producto55.jpg", material:"acero-blanco", categoria:"Aros"},
-    {id:'acero-56', nombre:"Aros Acero Argolla Diseño Croissant Inflado", precio:0, img:"images-acero/producto56.jpg", material:"acero-blanco", categoria:"Aros"}, [cite: 38]
+    {id:'acero-56', nombre:"Aros Acero Argolla Diseño Croissant Inflado", precio:0, img:"images-acero/producto56.jpg", material:"acero-blanco", categoria:"Aros"}, /* [cite: 38] */
     {id:'acero-57', nombre:"Aros Acero Stud Flor Margarita Con Perla", precio:0, img:"images-acero/producto57.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-58', nombre:"Aros Acero Media Argolla Textura Serpiente", precio:0, img:"images-acero/producto58.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-59', nombre:"Aros Acero Argolla Dije Mariposa Cristal Verde", precio:0, img:"images-acero/producto59.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-60', nombre:"Aros Acero Argolla Dije Mariposa Cristal Rosa", precio:0, img:"images-acero/producto60.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-61', nombre:"Collar Acero Dije Cerezas Corazón Cristal Rojo", precio:0, img:"images-acero/producto61.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
-    {id:'acero-62', nombre:"Aros Acero Dije Moño Corazones Rosados", precio:0, img:"images-acero/producto62.jpg", material:"acero-blanco", 
- categoria:"Aros"}, [cite: 39]
+    {id:'acero-62', nombre:"Aros Acero Dije Moño Corazones Rosados", precio:0, img:"images-acero/producto62.jpg", material:"acero-blanco", categoria:"Aros"}, /* [cite: 39] */
     {id:'acero-63', nombre:"Pulsera Acero Cadena Dijes Marinos Esmaltados", precio:0, img:"images-acero/producto63.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-64', nombre:"Anillo Acero Diseño Escultórico Forma Flor", precio:0, img:"images-acero/producto64.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-65', nombre:"Collar Acero Cadenas Mixtas Dije Doble Trébol", precio:0, img:"images-acero/producto65.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
@@ -338,28 +335,28 @@
     {id:'acero-67', nombre:"Aros Acero Dije Flor Esmalte Lila", precio:0, img:"images-acero/producto67.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-68', nombre:"Collar Acero Cadena Fina Dije Flor Nácar", precio:0, img:"images-acero/producto68.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-69', nombre:"Aros Acero 
- Dije Flor Esmalte Turquesa", precio:0, img:"images-acero/producto69.jpg", material:"acero-blanco", categoria:"Aros"}, [cite: 40]
+ Dije Flor Esmalte Turquesa", precio:0, img:"images-acero/producto69.jpg", material:"acero-blanco", categoria:"Aros"}, /* [cite: 40] */
     {id:'acero-70', nombre:"Aros Flor Grandes Pétalos Esmalte Negro", precio:0, img:"images-acero/producto70.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-71', nombre:"Set Collar Y Pulsera Acero Múltiples Dijes", precio:0, img:"images-acero/producto71.jpg", material:"acero-blanco", categoria:"Conjuntos"},
     {id:'acero-72', nombre:"Collar Acero Dije Mariposa Cristales Rojos", precio:0, img:"images-acero/producto72.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-73', nombre:"Collar Acero Dorado Múltiples Dijes Estilo Romántico", precio:0, img:"images-acero/producto73.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-74', nombre:"Aros Acero Dorado Trenza Calada Espiga", precio:0, img:"images-acero/producto74.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-75', nombre:"Aros Colgantes Acero Diseño Serpiente Articulada", precio:0, img:"images-acero/producto75.jpg", material:"acero-blanco", categoria:"Aros"},
-    {id:'acero-76', nombre:"Aros Acero Dije Flor Esmalte Rosa", precio:0, img:"images-acero/producto76.jpg", material:"acero-blanco", categoria:"Aros"}, [cite: 41]
+    {id:'acero-76', nombre:"Aros Acero Dije Flor Esmalte Rosa", precio:0, img:"images-acero/producto76.jpg", material:"acero-blanco", categoria:"Aros"}, /* [cite: 41] */
     {id:'acero-77', nombre:"Aros Flor Grandes Pétalos Esmalte Rosa", precio:0, img:"images-acero/producto77.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-78', nombre:"Cadena Fina Acero Modelo Singapur Diamantada", precio:0, img:"images-acero/producto78.jpg", material:"acero-blanco", categoria:"Cadenas"},
     {id:'acero-79', nombre:"Aros Acero Dorado Dije Flor Resina Celeste", precio:0, img:"images-acero/producto79.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-80', nombre:"Collar Acero Dije Mariposa Cristales Verdes", precio:0, img:"images-acero/producto80.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-81', nombre:"Anillo Acero Mariposa Cristales Multicolor", precio:0, img:"images-acero/producto81.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-82', nombre:"Anillo Acero Domo Circones Multicolor Baguette", precio:0, img:"images-acero/producto82.jpg", material:"acero-blanco", categoria:"Anillos"},
-    {id:'acero-83', nombre:"Anillo Acero Abierto Dos Mariposas Cristal", precio:0, img:"images-acero/producto83.jpg", material:"acero-blanco", categoria:"Anillos"}, [cite: 42]
+    {id:'acero-83', nombre:"Anillo Acero Abierto Dos Mariposas Cristal", precio:0, img:"images-acero/producto83.jpg", material:"acero-blanco", categoria:"Anillos"}, /* [cite: 42] */
     {id:'acero-84', nombre:"Collar Acero Dije Mariposa Asimétrico Circones Fucsia", precio:0, img:"images-acero/producto84.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-85', nombre:"Collar Acero Dije Trébol Piedra Rosa Central", precio:0, img:"images-acero/producto85.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-86', nombre:"Aros Acero Dije Trébol Esmalte Turquesa", precio:0, img:"images-acero/producto86.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-87', nombre:"Pulsera Acero Múltiples Dijes Temática Marina", precio:0, img:"images-acero/producto87.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-88', nombre:"Collar Acero Dije Trébol Piedra Verde Central", precio:0, img:"images-acero/producto88.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-89', nombre:"Pulsera Acero Fina Delicada Cadena 
- Singapur", precio:0, img:"images-acero/producto89.jpg", material:"acero-blanco", categoria:"Pulseras"}, [cite: 43]
+ Singapur", precio:0, img:"images-acero/producto89.jpg", material:"acero-blanco", categoria:"Pulseras"}, /* [cite: 43] */
     {id:'acero-90', nombre:"Collar Acero Dije Mariposa Cristales Rosados", precio:0, img:"images-acero/producto90.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-91', nombre:"Aros Acero Dije Trébol Esmalte Turquesa", precio:0, img:"images-acero/producto91.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-92', nombre:"Pulsera Acero Cadena Corazones Calados", precio:0, img:"images-acero/producto92.jpg", material:"acero-blanco", categoria:"Pulseras"},
@@ -367,7 +364,7 @@
     {id:'acero-94', nombre:"Anillo Acero Mariposa Alas Cristal Tornasolado", precio:0, img:"images-acero/producto94.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-95', nombre:"Aros Acero Dije Trébol Esmalte Rosa", precio:0, img:"images-acero/producto95.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-96', nombre:"Anillo Acero Abierto Ajustable Tres Bandas", 
- precio:0, img:"images-acero/producto96.jpg", material:"acero-blanco", categoria:"Anillos"}, [cite: 44]
+ precio:0, img:"images-acero/producto96.jpg", material:"acero-blanco", categoria:"Anillos"}, /* [cite: 44] */
     {id:'acero-97', nombre:"Pulsera Acero Cadena Fina Singapur Diamantada", precio:0, img:"images-acero/producto97.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-98', nombre:"Aros Acero Dije Trébol Esmalte Rosa", precio:0, img:"images-acero/producto98.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-99', nombre:"Collar Acero Dorado Dije Mariposa Resina Rosada", precio:0, img:"images-acero/producto99.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
@@ -375,7 +372,7 @@
     {id:'acero-101', nombre:"Collar Acero Dije Cerezas Cuentas Cristal", precio:0, img:"images-acero/producto101.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-102', nombre:"Anillo Acero Delicado Solitario Piedra Fucsia", precio:0, img:"images-acero/producto102.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-103', nombre:"Aros Acero 
- Dije Cerezas Esmaltadas", precio:0, img:"images-acero/producto103.jpg", material:"acero-blanco", categoria:"Aros"}, [cite: 45]
+ Dije Cerezas Esmaltadas", precio:0, img:"images-acero/producto103.jpg", material:"acero-blanco", categoria:"Aros"}, /* [cite: 45] */
     {id:'acero-104', nombre:"Aros Acero Anchos Forma Triangular Circones", precio:0, img:"images-acero/producto104.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-105', nombre:"Anillo Acero Diseño Cruzado En X Circones", precio:0, img:"images-acero/producto105.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-106', nombre:"Anillo Acero Compromiso Piedra Cuadrada", precio:0, img:"images-acero/producto106.jpg", material:"acero-blanco", categoria:"Anillos"},
@@ -383,7 +380,7 @@
     {id:'acero-108', nombre:"Anillo Acero Abierto Ajustable Diseño Hoja", precio:0, img:"images-acero/producto108.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-109', nombre:"Anillo Acero Sinfín Corazones Cristal Multicolor", precio:0, img:"images-acero/producto109.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-110', nombre:"Anillo Acero Cintillo Corazones 
- Circones Blancos", precio:0, img:"images-acero/producto110.jpg", material:"acero-blanco", categoria:"Anillos"}, [cite: 46]
+ Circones Blancos", precio:0, img:"images-acero/producto110.jpg", material:"acero-blanco", categoria:"Anillos"}, /* [cite: 46] */
     {id:'acero-111', nombre:"Anillo Acero Abierto Trébol Esmalte Negro", precio:0, img:"images-acero/producto111.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-112', nombre:"Anillo Acero Mariposa Cristales Blancos", precio:0, img:"images-acero/producto112.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-113', nombre:"Anillo Acero Abierto Ajustable Dos Gotas Cristal", precio:0, img:"images-acero/producto113.jpg", material:"acero-blanco", categoria:"Anillos"},
@@ -391,7 +388,7 @@
     {id:'acero-115', nombre:"Anillo Acero Delicado Flor Circones Multicolor", precio:0, img:"images-acero/producto115.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-116', nombre:"Anillo Acero Abierto Ajustable Mariposa Esmalte Verde", precio:0, img:"images-acero/producto116.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-117', nombre:"Anillo Acero Banda Fina Corazón 
- Circones Multicolor", precio:0, img:"images-acero/producto117.jpg", material:"acero-blanco", categoria:"Anillos"}, [cite: 47]
+ Circones Multicolor", precio:0, img:"images-acero/producto117.jpg", material:"acero-blanco", categoria:"Anillos"}, /* [cite: 47] */
     {id:'acero-118', nombre:"Anillo Acero Abierto Ajustable Doble Gota Multicolor", precio:0, img:"images-acero/producto118.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-119', nombre:"Anillo Acero Gran Flor Calada Cristales Multicolor", precio:0, img:"images-acero/producto119.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-120', nombre:"Anillo Acero Abierto Doble Banda Trébol", precio:0, img:"images-acero/producto120.jpg", material:"acero-blanco", categoria:"Anillos"},
@@ -399,7 +396,7 @@
     {id:'acero-122', nombre:"Anillo Acero Cóctel Diseño Flor Circones", precio:0, img:"images-acero/producto122.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-123', nombre:"Anillo Acero Diseño Calado Flor Mariposa", precio:0, img:"images-acero/producto123.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-124', nombre:"Anillo Acero Grande Mariposa Calada", 
- precio:0, img:"images-acero/producto124.jpg", material:"acero-blanco", categoria:"Anillos"}, [cite: 48]
+ precio:0, img:"images-acero/producto124.jpg", material:"acero-blanco", categoria:"Anillos"}, /* [cite: 48] */
     {id:'acero-125', nombre:"Anillo Acero Trébol Piedra Verde Aureola", precio:0, img:"images-acero/producto125.jpg", material:"acero-blanco", categoria:"Anillos"},
     {id:'acero-126', nombre:"Aros Acero Cuerpo Inflado Círculos Decorativos", precio:0, img:"images-acero/producto126.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-127', nombre:"Aros Acero Finos Delicados Dije Mariposa", precio:0, img:"images-acero/producto127.jpg", material:"acero-blanco", categoria:"Aros"},
@@ -407,7 +404,7 @@
     {id:'acero-129', nombre:"Aros Acero Flor Grande Pétalos Texturizados", precio:0, img:"images-acero/producto129.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-130', nombre:"Aros Acero Dije Trébol Cristal Rosado", precio:0, img:"images-acero/producto130.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-131', nombre:"Pulsera Acero Múltiples Dijes Estilo Ecléctico", precio:0, img:"images-acero/producto131.jpg", 
- material:"acero-blanco", categoria:"Pulseras"}, [cite: 49]
+ material:"acero-blanco", categoria:"Pulseras"}, /* [cite: 49] */
     {id:'acero-132', nombre:"Pulsera Acero Múltiples Dijes Temáticos", precio:0, img:"images-acero/producto132.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-133', nombre:"Aros Acero Dije Trébol Cristal Rojo", precio:0, img:"images-acero/producto133.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-134', nombre:"Pulsera Acero Cadena Fina Flores De Perlas", precio:0, img:"images-acero/producto134.jpg", material:"acero-blanco", categoria:"Pulseras"},
@@ -415,14 +412,14 @@
     {id:'acero-136', nombre:"Aros Acero Dije Mariposa Acrílico Lila", precio:0, img:"images-acero/producto136.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-137', nombre:"Aros Acero Dije Trébol Cristal Azul", precio:0, img:"images-acero/producto137.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-138', nombre:"Aros Acero Dije Hongo Esmaltado", precio:0, img:"images-acero/producto138.jpg", material:"acero-blanco", categoria:"Aros"},
-    {id:'acero-139', nombre:"Aros Acero Abridor Margarita Esmaltada", precio:0, img:"images-acero/producto139.jpg", material:"acero-blanco", categoria:"Aros"}, [cite: 50]
+    {id:'acero-139', nombre:"Aros Acero Abridor Margarita Esmaltada", precio:0, img:"images-acero/producto139.jpg", material:"acero-blanco", categoria:"Aros"}, /* [cite: 50] */
     {id:'acero-140', nombre:"Aros Acero Dorado Dije Flor Resina Marmoleada", precio:0, img:"images-acero/producto140.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-141', nombre:"Aros Acero Dije Mariposa Negra", precio:0, img:"images-acero/producto141.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-142', nombre:"Aros Acero Dije Mariposa Cristal Lila", precio:0, img:"images-acero/producto142.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-143', nombre:"Collar Acero Cadenas Mixtas Dije Doble Trébol Negro", precio:0, img:"images-acero/producto143.jpg", material:"acero-blanco", categoria:"Collares y Dijes"},
     {id:'acero-144', nombre:"Cadena Acero Fina Delicada Postas Cilíndricas", precio:0, img:"images-acero/producto144.jpg", material:"acero-blanco", categoria:"Cadenas"},
     {id:'acero-145', nombre:"Aros Acero Abridor Diseño Redondo Esmalte Rosa", precio:0, img:"images-acero/producto145.jpg", material:"acero-blanco", 
- categoria:"Aros"}, [cite: 51]
+ categoria:"Aros"}, /* [cite: 51] */
     {id:'acero-146', nombre:"Aros Acero Abridor Cristal Negro Corazón", precio:0, img:"images-acero/producto146.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-147', nombre:"Pulsera Acero Cadena Eslabones Broche Serpiente", precio:0, img:"images-acero/producto147.jpg", material:"acero-blanco", categoria:"Pulseras"},
     {id:'acero-148', nombre:"Aros Acero Abridor Diseño Triángulo Esmalte Rosa", precio:0, img:"images-acero/producto148.jpg", material:"acero-blanco", categoria:"Aros"},
@@ -430,7 +427,7 @@
     {id:'acero-150', nombre:"Cadena Acero Diseño Clásico Modelo Fígaro 3x1", precio:0, img:"images-acero/producto150.jpg", material:"acero-blanco", categoria:"Cadenas"},
     {id:'acero-151', nombre:"Aro Acero Abridor Diseño Trébol Esmalte Rosa", precio:0, img:"images-acero/producto151.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-152', nombre:"Aro Acero Abridor Forma L Circones Azules", precio:0, 
- img:"images-acero/producto152.jpg", material:"acero-blanco", categoria:"Piercings"}, [cite: 52]
+ img:"images-acero/producto152.jpg", material:"acero-blanco", categoria:"Piercings"}, /* [cite: 52] */
     {id:'acero-153', nombre:"Aro Acero Piercing Diseño Ojo Turco Esmaltado", precio:0, img:"images-acero/producto153.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-154', nombre:"Aros Acero Infantiles Diseño Mano De Fátima", precio:0, img:"images-acero/producto154.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-155', nombre:"Aro Acero Piercing Cristal Blanco Talle Princesa", precio:0, img:"images-acero/producto155.jpg", material:"acero-blanco", categoria:"Piercings"},
@@ -438,7 +435,7 @@
     {id:'acero-157', nombre:"Aro Acero Abridor Cristal Lila Corazón", precio:0, img:"images-acero/producto157.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-158', nombre:"Cadena Acero Fina Delicada Eslabones Ovalados", precio:0, img:"images-acero/producto158.jpg", material:"acero-blanco", categoria:"Cadenas"},
     {id:'acero-159', nombre:"Aro Acero Piercing Diseño Ojo Turco Rosa", 
- precio:0, img:"images-acero/producto159.jpg", material:"acero-blanco", categoria:"Piercings"}, [cite: 53]
+ precio:0, img:"images-acero/producto159.jpg", material:"acero-blanco", categoria:"Piercings"}, /* [cite: 53] */
     {id:'acero-160', nombre:"Aro Acero Piercing Cristal Verde Agua", precio:0, img:"images-acero/producto160.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-161', nombre:"Cadena Acero Clásica Modelo Veneciana Box Chain", precio:0, img:"images-acero/producto161.jpg", material:"acero-blanco", categoria:"Cadenas"},
     {id:'acero-162', nombre:"Aros Flor Grandes Esmalte Turquesa Tono Dorado", precio:0, img:"images-acero/producto162.jpg", material:"acero-blanco", categoria:"Aros"},
@@ -446,7 +443,7 @@
     {id:'acero-164', nombre:"Aro Acero Piercing Logo Barbie Rosa", precio:0, img:"images-acero/producto164.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-165', nombre:"Aro Acero Abridor Cristal Celeste Corazón", precio:0, img:"images-acero/producto165.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-166', nombre:"Aro Acero Piercing Minimalista Bolita Pulida", 
- precio:0, img:"images-acero/producto166.jpg", material:"acero-blanco", categoria:"Piercings"}, [cite: 54]
+ precio:0, img:"images-acero/producto166.jpg", material:"acero-blanco", categoria:"Piercings"}, /* [cite: 54] */
     {id:'acero-167', nombre:"Aro Acero Abridor Cristal Redondo Verde Oscuro", precio:0, img:"images-acero/producto167.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-168', nombre:"Aros Acero Infantiles Diseño Gatito 3D", precio:0, img:"images-acero/producto168.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-169', nombre:"Aros Flor Grandes Esmalte Lila Tono Dorado", precio:0, img:"images-acero/producto169.jpg", material:"acero-blanco", categoria:"Aros"},
@@ -454,7 +451,7 @@
     {id:'acero-171', nombre:"Aro Acero Abridor Mariposa Esmaltada Rosa Y Blanco", precio:0, img:"images-acero/producto171.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-172', nombre:"Aros Acero Abridor Ojo Turco Pestañas", precio:0, img:"images-acero/producto172.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-173', nombre:"Aro Acero Piercing Mariposa 
- Esmaltada Verde", precio:0, img:"images-acero/producto173.jpg", material:"acero-blanco", categoria:"Piercings"}, [cite: 55]
+ Esmaltada Verde", precio:0, img:"images-acero/producto173.jpg", material:"acero-blanco", categoria:"Piercings"}, /* [cite: 55] */
     {id:'acero-174', nombre:"Aro Acero Piercing Cristal Rosa Pálido Navette", precio:0, img:"images-acero/producto174.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-175', nombre:"Aros Acero Trepador Cuatro Círculos Texturizados", precio:0, img:"images-acero/producto175.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-176', nombre:"Aro Acero Abridor Cristal Celeste Corazón", precio:0, img:"images-acero/producto176.jpg", material:"acero-blanco", categoria:"Piercings"},
@@ -462,7 +459,7 @@
     {id:'acero-178', nombre:"Aros Acero Abridor Vaquita San Antonio Esmaltada", precio:0, img:"images-acero/producto178.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-179', nombre:"Aro Acero Piercing Estrella Esmaltada Verde Menta", precio:0, img:"images-acero/producto179.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-180', nombre:"Aros Acero Dije 
- Mariposa Acrílico Rosa Pálido", precio:0, img:"images-acero/producto180.jpg", material:"acero-blanco", categoria:"Aros"}, [cite: 56]
+ Mariposa Acrílico Rosa Pálido", precio:0, img:"images-acero/producto180.jpg", material:"acero-blanco", categoria:"Aros"}, /* [cite: 56] */
     {id:'acero-181', nombre:"Cadena Acero Eslabones Finos Bolitas Espaciadas", precio:0, img:"images-acero/producto181.jpg", material:"acero-blanco", categoria:"Cadenas"},
     {id:'acero-182', nombre:"Aros Acero Dije Mariposa Acrílico Blanco Perla", precio:0, img:"images-acero/producto182.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-183', nombre:"Aro Acero Abridor Cristal Verde Agua Pera", precio:0, img:"images-acero/producto183.jpg", material:"acero-blanco", categoria:"Piercings"},
@@ -470,7 +467,7 @@
     {id:'acero-185', nombre:"Aro Acero Abridor Cristal Verde Claro Corazón", precio:0, img:"images-acero/producto185.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-186', nombre:"Aro Acero Piercing Bolita Acabado Diamantado", precio:0, img:"images-acero/producto186.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-187', nombre:"Aro 
- Acero Abridor Cristal Celeste Claro Pera", precio:0, img:"images-acero/producto187.jpg", material:"acero-blanco", categoria:"Piercings"}, [cite: 57]
+ Acero Abridor Cristal Celeste Claro Pera", precio:0, img:"images-acero/producto187.jpg", material:"acero-blanco", categoria:"Piercings"}, /* [cite: 57] */
     {id:'acero-188', nombre:"Aro Acero Abridor Cristal Celeste Corazón", precio:0, img:"images-acero/producto188.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-189', nombre:"Aro Acero Abridor Cristal Fucsia Talle Princesa", precio:0, img:"images-acero/producto189.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-190', nombre:"Aros Acero Abridor Corazón Flechado Negro", precio:0, img:"images-acero/producto190.jpg", material:"acero-blanco", categoria:"Aros"},
@@ -478,24 +475,24 @@
     {id:'acero-192', nombre:"Aro Acero Abridor Trébol Esmalte Turquesa", precio:0, img:"images-acero/producto192.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-193', nombre:"Aros Acero Abridor Cristal Redondo Celeste", precio:0, img:"images-acero/producto193.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-194', nombre:"Aro 
- Acero Abridor Corazón Piedra Aguamarina", precio:0, img:"images-acero/producto194.jpg", material:"acero-blanco", categoria:"Piercings"}, [cite: 58]
+ Acero Abridor Corazón Piedra Aguamarina", precio:0, img:"images-acero/producto194.jpg", material:"acero-blanco", categoria:"Piercings"}, /* [cite: 58] */
     {id:'acero-195', nombre:"Aros Acero Dorado Argolla Dije Corazón Calado", precio:0, img:"images-acero/producto195.jpg", material:"acero-blanco", categoria:"Aros"},
     {id:'acero-196', nombre:"Aro Acero Abridor Corazón Cristal Verde Claro", precio:0, img:"images-acero/producto196.jpg", material:"acero-blanco", categoria:"Piercings"},
     {id:'acero-197', nombre:"Pulsera Acero Esclava Dije Redondo Circones", precio:0, img:"images-acero/producto197.jpg", material:"acero-blanco", categoria:"Pulseras"}
   ];
-  function getProducto(id){ return productos.find(p => p.id === id); } [cite: 59]
+  function getProducto(id){ return productos.find(p => p.id === id); } /* [cite: 59] */
 
   /* --------------------------- Render catálogo (con filtro) --------------------------- */
   function renderCatalog(){
     productListEl.innerHTML = '';
-    const listaFiltrada = productos.filter(p => { [cite: 60]
+    const listaFiltrada = productos.filter(p => { /* [cite: 60] */
       const pasaFiltroPrincipal = filtroPrincipalActual === 'todos' || p.material === filtroPrincipalActual;
       // Corregimos la lógica del subfiltro para ser más flexible
       const categoriaProducto = p.categoria.toLowerCase();
       const pasaFiltroSecundario = filtroSecundarioActual === 'todos' || categoriaProducto.includes(filtroSecundarioActual);
       return pasaFiltroPrincipal && pasaFiltroSecundario;
     });
-    listaFiltrada.forEach(p => { [cite: 61]
+    listaFiltrada.forEach(p => { /* [cite: 61] */
       // Importante: El ID ahora se pasa como un string con comillas simples.
       productListEl.innerHTML += `
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -503,20 +500,20 @@
             <span class="price-tag">$${p.precio}</span>
             <div class="heart-badge" id="heart-${p.id}">
               <span class="count" id="heart-count-${p.id}">0</span>
-            </div> [cite: 62]
+            </div> {/* [cite: 62] */}
             <img src="${p.img}" alt="${p.nombre}">
             <div class="card-body text-center">
               <h5 class="fw-bold">${p.nombre}</h5>
               <p class="text-muted">Joyas de ${p.material.replace('-', ' ')}.</p>
               <button id="btn-${p.id}" class="btn-gold w-100"
-                [cite_start]onclick="addToCart('${p.id}')"> [cite: 63]
+                [cite_start]onclick="addToCart('${p.id}')"> {/* [cite: 63] */}
                 Agregar al pedido
               </button>
             </div>
           </div>
         </div>`;
     });
-    updateUI(); [cite: 64]
+    updateUI(); /* [cite: 64] */
   }
 
   // --- LÓGICA PARA LOS FILTROS (SIN CAMBIOS) ---
@@ -532,7 +529,7 @@
       renderCatalog();
     });
   });
-  document.querySelectorAll('#sub-filters .filter-pill').forEach(btn => { [cite: 65]
+  document.querySelectorAll('#sub-filters .filter-pill').forEach(btn => { /* [cite: 65] */
     btn.addEventListener('click', () => {
       document.querySelectorAll('#sub-filters .filter-pill').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
@@ -540,41 +537,41 @@
       renderCatalog();
     });
   });
-  renderCatalog(); [cite: 66]
+  renderCatalog(); /* [cite: 66] */
 
   /* --------------------------- Lógica carrito --------------------------- */
   function addToCart(id){
     const productData = getProducto(id);
     if (!productData) return;
-    const found = cart.find(p => p.id === id); [cite: 67]
+    const found = cart.find(p => p.id === id); /* [cite: 67] */
     if (found) {
       found.qty++;
-    } else { [cite: 68]
+    } else { /* [cite: 68] */
       cart.push({ id: productData.id, product: productData.nombre, price: productData.precio, img: productData.img, qty: 1 });
-    } [cite: 69]
+    } /* [cite: 69] */
     updateUI();
   }
 
   function changeQty(id, delta, ev){
     ev && ev.stopPropagation();
-    const item = cart.find(p => p.id === id); [cite: 70]
+    const item = cart.find(p => p.id === id); /* [cite: 70] */
     if (!item) return;
     item.qty += delta;
-    if (item.qty <= 0) { [cite: 71]
+    if (item.qty <= 0) { /* [cite: 71] */
       cart = cart.filter(p => p.id !== id);
-    } [cite: 72]
+    } /* [cite: 72] */
     updateUI();
   }
 
   function removeFromCart(id){
     cart = cart.filter(p => p.id !== id);
     updateUI();
-  } [cite: 73]
+  } /* [cite: 73] */
 
   /* --------------------------- UI sync (catálogo + carrito) --------------------------- */
   function updateUI(){
     const totalUnits = cart.reduce((s, i) => s + i.qty, 0);
-    cartCountEl.textContent = totalUnits; [cite: 74]
+    cartCountEl.textContent = totalUnits; /* [cite: 74] */
 
     // Actualiza los botones de productos en el catálogo
     productos.forEach(prod => {
@@ -588,7 +585,7 @@
 
       if (qty === 0) {
         btn.innerHTML = 'Agregar al 
- pedido'; [cite: 75]
+ pedido'; /* [cite: 75] */
         btn.onclick = () => addToCart(prod.id);
         if (heart) heart.classList.remove('show');
       } else {
@@ -597,19 +594,19 @@
           <div class="qty-ui">
             <span class="qty-icon" aria-label="Restar" onclick="changeQty('${prod.id}', -1, event)">–</span>
             <span class="qty-number">${qty}</span>
-            <span class="qty-icon" aria-label="Sumar"  onclick="changeQty('${prod.id}', 1, event)">+</span> [cite: 76]
+            <span class="qty-icon" aria-label="Sumar"  onclick="changeQty('${prod.id}', 1, event)">+</span> {/* [cite: 76] */}
           </div>`;
-        btn.onclick = null; [cite: 77]
+        btn.onclick = null; /* [cite: 77] */
         if (heart && heartCount){
           heartCount.textContent = qty;
           heart.classList.add('show');
-        } [cite: 78]
+        } /* [cite: 78] */
       }
     });
-    // Actualiza la vista del carrito [cite: 79]
+    // Actualiza la vista del carrito /* [cite: 79] */
     let html = '';
     let total = 0;
-    if (cart.length > 0) { [cite: 80]
+    if (cart.length > 0) { /* [cite: 80] */
         cart.forEach(item => {
         total += item.price * item.qty;
         // Importante: Pasar los IDs como strings en los onclick del carrito
@@ -617,39 +614,39 @@
             <div class="cart-item">
             <div class="d-flex align-items-center">
                 <img src="${item.img}" 
- [cite_start]alt="${item.product}"> [cite: 81]
+ [cite_start]alt="${item.product}"> {/* [cite: 81] */}
                 <div>
                 <b>${item.product}</b><br>
                 <small class="text-muted">$${item.price} c/u</small>
                 </div>
             </div>
             <div class="d-flex align-items-center gap-2">
-                 <button class="btn btn-sm btn-outline-secondary" onclick="changeQty('${item.id}', -1)">–</button> [cite: 82]
+                 <button class="btn btn-sm btn-outline-secondary" onclick="changeQty('${item.id}', -1)">–</button> {/* [cite: 82] */}
                 <span>${item.qty}</span>
                 <button class="btn btn-sm btn-outline-secondary" onclick="changeQty('${item.id}', 1)">+</button>
                 <button class="btn btn-sm btn-danger" onclick="removeFromCart('${item.id}')">X</button>
             </div>
             </div>`;
-        }); [cite: 83]
+        }); /* [cite: 83] */
         cartTotalEl.textContent = `Total: $${total.toLocaleString('es-AR')}`;
     } else {
         html = '<p class="text-center text-muted">Tu carrito está vacío.</p>';
-        cartTotalEl.textContent = ''; [cite: 84]
+        cartTotalEl.textContent = ''; /* [cite: 84] */
     }
     cartItemsEl.innerHTML = html;
-  } [cite: 85]
+  } /* [cite: 85] */
 
   /* --------------------------- Navegación y Checkout (SIN CAMBIOS) --------------------------- */
   function showCart(){
     document.getElementById('hero-section').style.display = 'none';
-    document.getElementById('catalogo').style.display     = 'none'; [cite: 86]
+    document.getElementById('catalogo').style.display     = 'none'; /* [cite: 86] */
     document.getElementById('cart-section').style.display  = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  } [cite: 87]
+  } /* [cite: 87] */
   function showCatalog(){
     document.getElementById('hero-section').style.display = 'block';
     document.getElementById('catalogo').style.display     = 'block';
-    document.getElementById('cart-section').style.display  = 'none'; [cite: 88]
+    document.getElementById('cart-section').style.display  = 'none'; /* [cite: 88] */
   }
 
   document.getElementById('checkout-btn').addEventListener('click', () => {
@@ -662,29 +659,26 @@
     });
     text += `\nTotal estimado: $${total.toLocaleString('es-AR')}\n\n¿Me confirmas disponibilidad y formas de pago?`;
     const phone = '5493834381449';
-     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`; 
+     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`; /* [cite: 89] */
     window.open(url, '_blank');
   });
 </script>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-  if (window.netlifyIdentity) { [cite: 13]
-    window.netlifyIdentity.on('init', user => {
-      if (!user) {
-        window.netlifyIdentity.on('login', () => {
-          document.location.href = '/admin/';
-        });
-       } [cite: 11]
-    });
-
-    window.addEventListener('DOMContentLoaded', () => { [cite: 12]
-      const hasInvite = /invite_token=/.test(window.location.hash); [cite: 12]
-      if (hasInvite) { [cite: 12]
-        window.netlifyIdentity.open(); [cite: 12]
+  // Solo nos preocupamos por el token de invitación aquí
+  if (window.netlifyIdentity) { /* [cite: 13] */
+    window.addEventListener('DOMContentLoaded', () => { /* [cite: 12] */
+      const hasInvite = /invite_token=/.test(window.location.hash); /* [cite: 12] */
+      if (hasInvite) { /* [cite: 12] */
+        // Si hay un token de invitación en la URL, abre el modal
+        // específicamente en modo 'signup' para completar el registro.
+        window.netlifyIdentity.open('signup'); /* [cite: 12] */
       }
-    });
-  }
+      // Quitamos la lógica 'init' y 'login' que redirigía automáticamente.
+      // Dejamos que /admin/ maneje su propia protección y login.
+    }); /* [cite: 12] */
+  } /* [cite: 13] */
 </script>
 
 </body>
